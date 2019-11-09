@@ -1,5 +1,6 @@
 @import "variables";
 @import "patternClass";
+@import "checkout";
 
 * {
 	margin: 0;
@@ -23,7 +24,8 @@ a:hover {
 	filter: brightness(1.1);
 }
 
-.button:hover,button:hover {
+.button:hover,
+button:hover {
 	box-shadow: 0 0 10px rgba(0, 0, 0, 0.17);
 }
 
@@ -63,7 +65,7 @@ a:hover {
 	&Right {
 		@extend %flexAlign;
 	}
-	
+
 
 	&Left,
 	&Form {
@@ -160,7 +162,7 @@ a:hover {
 
 .cartLink {
 	position: relative;
-	
+
 }
 
 .cartBlock:hover .dropCartFlex {
@@ -432,12 +434,23 @@ a:hover {
 	background-color: #e8e8e8;
 }
 
+@keyframes anim {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
 .promoContent {
 	height: 614px;
 	background-image: url(img/promoBack.jpg);
 	background-position: 0 -51px;
 	display: flex;
 	align-items: center;
+	animation: anim 3s 1;
 }
 
 .promoText {
