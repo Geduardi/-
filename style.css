@@ -180,6 +180,9 @@
     -webkit-transform: rotateY(-90deg) translateY(50px);
             transform: rotateY(-90deg) translateY(50px);
   }
+  50% {
+    opacity: 1;
+  }
   100% {
     opacity: 1;
     -webkit-transform: rotateY(0deg) translateY(0px);
@@ -192,6 +195,9 @@
     opacity: 0;
     -webkit-transform: rotateY(-90deg) translateY(50px);
             transform: rotateY(-90deg) translateY(50px);
+  }
+  50% {
+    opacity: 1;
   }
   100% {
     opacity: 1;
@@ -233,6 +239,42 @@
   }
   to {
     background-position-x: 0px;
+  }
+}
+
+@-webkit-keyframes menuDropByList {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0) translateZ(-500px);
+            transform: scaleY(0) translateZ(-500px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleY(1) translateZ(50px);
+            transform: scaleY(1) translateZ(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1) translateZ(0);
+            transform: scaleY(1) translateZ(0);
+  }
+}
+
+@keyframes menuDropByList {
+  0% {
+    opacity: 0;
+    -webkit-transform: scaleY(0) translateZ(-500px);
+            transform: scaleY(0) translateZ(-500px);
+  }
+  50% {
+    opacity: 1;
+    -webkit-transform: scaleY(1) translateZ(50px);
+            transform: scaleY(1) translateZ(50px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scaleY(1) translateZ(0);
+            transform: scaleY(1) translateZ(0);
   }
 }
 
@@ -1710,6 +1752,136 @@ button:hover {
   display: block;
 }
 
+.filter:hover .filterSub .filterList:nth-child(1) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.02s;
+          animation-delay: 0.02s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(2) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.04s;
+          animation-delay: 0.04s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(3) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.06s;
+          animation-delay: 0.06s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(4) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.08s;
+          animation-delay: 0.08s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(5) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(6) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.12s;
+          animation-delay: 0.12s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(7) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.14s;
+          animation-delay: 0.14s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(8) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.16s;
+          animation-delay: 0.16s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(9) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.18s;
+          animation-delay: 0.18s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(10) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(11) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.22s;
+          animation-delay: 0.22s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(12) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.24s;
+          animation-delay: 0.24s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.filter:hover .filterSub .filterList:nth-child(13) {
+  opacity: 0;
+  -webkit-animation: menuDropByList .3s;
+          animation: menuDropByList .3s;
+  -webkit-animation-delay: 0.26s;
+          animation-delay: 0.26s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 .filterMain {
   height: 37px;
   display: -webkit-box;
@@ -1764,6 +1936,8 @@ button:hover {
 
 .filterSubMenu {
   margin-bottom: 40px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
 }
 
 .filterLink {
@@ -1854,6 +2028,8 @@ button:hover {
   color: #f16d7f;
   font-size: 16px;
   font-weight: bold;
+  -webkit-transition: background-color, color 0.3s ease-out;
+  transition: background-color, color 0.3s ease-out;
 }
 
 .catalogButton:hover {
