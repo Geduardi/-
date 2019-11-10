@@ -1,6 +1,7 @@
 @import "variables";
 @import "patternClass";
 @import "checkout";
+@import "animation";
 
 * {
 	margin: 0;
@@ -10,6 +11,7 @@
 body {
 	font-family: 'Lato', sans-serif;
 	min-width: 1140px;
+	animation: appearing .5s ease-in-out;
 }
 
 a {
@@ -119,7 +121,8 @@ button:hover {
 
 	&Flex:hover .drop {
 		display: flex;
-		z-index: 1;
+		opacity: 0;
+		animation: menuDrop .3s ease-in-out forwards;
 	}
 
 	&Padding {
@@ -167,6 +170,8 @@ button:hover {
 
 .cartBlock:hover .dropCartFlex {
 	display: flex;
+	opacity: 0;
+	animation: menuJump .3s ease-out forwards;
 }
 
 .dropCartFlex {
@@ -176,7 +181,7 @@ button:hover {
 	border: 1px solid #ececec;
 	position: absolute;
 	display: none;
-
+	z-index: 1;
 	flex-direction: column;
 	width: 220px;
 	padding: 10px 20px;
@@ -294,6 +299,8 @@ button:hover {
 
 	&List:hover .drop {
 		display: flex;
+		opacity: 0;
+		animation: menuDrop .3s ease-in-out forwards;
 	}
 
 	&Link {
@@ -321,6 +328,7 @@ button:hover {
 	border: 1px solid #ececec;
 	display: none;
 	position: absolute;
+	z-index: 1;
 
 	&::before {
 		content: '';
@@ -434,15 +442,6 @@ button:hover {
 	background-color: #e8e8e8;
 }
 
-@keyframes anim {
-	from {
-		opacity: 0;
-	}
-
-	to {
-		opacity: 1;
-	}
-}
 
 .promoContent {
 	height: 614px;
@@ -450,7 +449,7 @@ button:hover {
 	background-position: 0 -51px;
 	display: flex;
 	align-items: center;
-	animation: anim 3s 1;
+	animation: appearing 3s;
 }
 
 .promoText {
@@ -625,9 +624,11 @@ button:hover {
 .feturedBlock:hover .fImg {
 	filter: brightness(50%);
 }
-.fImg{
+
+.fImg {
 	transition: filter .4s;
 }
+
 .fBlockCart {
 	display: none;
 }
