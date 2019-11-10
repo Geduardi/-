@@ -287,7 +287,10 @@ button:hover {
 	border: 1px solid $siteColor;
 	color: $siteColor;
 }
-
+.cartBlock{
+	perspective: 1000px;
+	z-index: 1;
+}
 .menu {
 	display: flex;
 	justify-content: center;
@@ -450,6 +453,7 @@ button:hover {
 	display: flex;
 	align-items: center;
 	animation: appearing 3s;
+	animation: appearingFromRight 1s;
 }
 
 .promoText {
