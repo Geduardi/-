@@ -14,6 +14,16 @@
 
 .filter:hover .filterSub {
 	display: block;
+
+	// animation: menuDrop .3s;
+	@for $i from 1 through 13 {
+		.filterList:nth-child(#{$i}) {
+			opacity: 0;
+			animation: menuDropByList .3s;
+			animation-delay: .02s * $i;
+			animation-fill-mode: forwards;
+		}
+	}
 }
 
 .filterMain {
@@ -68,6 +78,7 @@
 
 	&Menu {
 		margin-bottom: 40px;
+		perspective: 1000px;
 	}
 }
 
@@ -145,6 +156,7 @@
 		color: $siteColor;
 		font-size: 16px;
 		font-weight: bold;
+		transition: background-color, color 0.3s ease-out;
 
 		&:hover {
 			background-color: $siteColor;
