@@ -3,10 +3,12 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<script src="https://kit.fontawesome.com/7c69a4a837.js" crossorigin="anonymous"></script>
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
-	<title>Checkout</title>
+	<title>Cart</title>
 </head>
 
 <body>
@@ -445,56 +447,152 @@
 		</div>
 
 	</section>
-
-	<main class="container">
-		<div class="checkout">
-			<section class="shipBlock">
-				<h1 class="shipBlock__h1">01. Shipping Adress</h1>
-				<div class="shipBlock__drop">
-					<form action="#" class="form" id="registForm">
-						<h4 class="form__h4">Check as a guest or register</h4>
-						<p class="form__p">Register with us for future convenience</p>
-						<label class="form__h4"><input type="radio" class="form__radio" name="signUp">checkout as guest</label><br>
-						<label class="form__h4"><input type="radio" class="form__radio" name="signUp" checked>register</label>
-						<h4 class="form__h4">register and save time!</h4>
-						<p class="form__p">Register with us for future convenience</p>
-						<p class="form__p form__p__marTop"><i class="fas fa-angle-double-right"></i>Fast and easy checkout</p>
-						<p class="form__p"><i class="fas fa-angle-double-right"></i>Easy access to your order history and status</p>
-						<button class="form__button" form="registForm">Continue</button>
-					</form>
-					<form action="#" class="form form__flex">
-						<h4 class="form__h4">Check as a guest or register</h4>
-						<p class="form__p">Register with us for future convenience</p>
-						<h4 class="form__h4 form__h4__required">EMAIL ADDRESS</h4>
-						<input type="email" class="form__input">
-						<h4 class="form__h4 form__h4__required">PASSWORD</h4>
-						<input type="password" class="form__input">
-						<h4 class="form__p form__p__important">* Required Fileds</h4>
-						<div class="form__signIn">
-							<button class="form__button">Log in</button>
-							<a href="#" class="form__h4 form__link">Forgot Password ?</a>
+	<div class="container">
+		<main class="cart">
+			<form action="#" class="cartForm">
+				<section class="orderList">
+					<div class="cartList">
+						<div class="cartList__element cartList__main">
+							<h1 class="cartList__h1">Product Details</h1>
 						</div>
-					</form>
+						<div class="cartList__element">
+							<h1 class="cartList__h1">unite Price</h1>
+						</div>
+						<div class="cartList__element">
+							<h1 class="cartList__h1">quantity</h1>
+						</div>
+						<div class="cartList__element">
+							<h1 class="cartList__h1">shipping</h1>
+						</div>
+						<div class="cartList__element">
+							<h1 class="cartList__h1">subtotal</h1>
+						</div>
+						<div class="cartList__element">
+							<h1 class="cartList__h1">action</h1>
+						</div>
+					</div>
+					<div class="cartList">
+						<div class="cartList__element cartList__main">
+							<div class="cartList__product">
+								<a href="#" class="cartList__link"><img src="img/cart__1.jpg" alt="" class="cartList__img"></a>
+								<div class="cartList__info">
+									<a href="#" class="cartList__link">
+										<h1 class="cartList__h1 cartList__info__padding">Mango People T-shirt</h1>
+									</a>
+									<p class="cartList__p">Color:<span class="cartList__span">Red</span></p>
+									<p class="cartList__p">Size:<span class="cartList__span">Xll</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">$150</p>
+						</div>
+						<div class="cartList__element">
+							<input type="number" class="cartList__input" value="2">
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">FREE</p>
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">$300</p>
+						</div>
+						<a href="#" class="cartList__element cartList__link__close"><i
+								class="fas fa-times-circle cartList__element__close"></i></a>
+					</div>
+					<div class="cartList">
+						<div class="cartList__element cartList__main">
+							<div class="cartList__product">
+								<a href="#" class="cartList__link"><img src="img/cart__2.jpg" alt="" class="cartList__img"></a>
+								<div class="cartList__info">
+									<a href="#" class="cartList__link">
+										<h1 class="cartList__h1 cartList__info__padding">Mango People T-shirt</h1>
+									</a>
+									<p class="cartList__p">Color:<span class="cartList__span">Red</span></p>
+									<p class="cartList__p">Size:<span class="cartList__span">Xll</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">$150</p>
+						</div>
+						<div class="cartList__element">
+							<input type="number" class="cartList__input" value="2">
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">FREE</p>
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">$300</p>
+						</div>
+						<a href="#" class="cartList__element cartList__link__close"><i
+								class="fas fa-times-circle cartList__element__close"></i></a>
+					</div>
+					<div class="cartList">
+						<div class="cartList__element cartList__main">
+							<div class="cartList__product">
+								<a href="#" class="cartList__link"><img src="img/cart__3.jpg" alt="" class="cartList__img"></a>
+								<div class="cartList__info">
+									<a href="#" class="cartList__link">
+										<h1 class="cartList__h1 cartList__info__padding">Mango People T-shirt</h1>
+									</a>
+									<p class="cartList__p">Color:<span class="cartList__span">Red</span></p>
+									<p class="cartList__p">Size:<span class="cartList__span">Xll</span></p>
+								</div>
+							</div>
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">$150</p>
+						</div>
+						<div class="cartList__element">
+							<input type="number" class="cartList__input" value="2">
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">FREE</p>
+						</div>
+						<div class="cartList__element">
+							<p class="cartList__p">$300</p>
+						</div>
+						<a href="#" class="cartList__element cartList__link__close"><i
+								class="fas fa-times-circle cartList__element__close"></i></a>
+					</div>
+				</section>
+				<div class="cartForm__actions">
+					<button class="cartButton cartForm__button">cLEAR SHOPPING CART</button>
+					<button class="cartButton cartForm__button">cONTINUE sHOPPING</button>
 				</div>
-			</section>
-			<section class="shipBlock">
-				<h1 class="shipBlock__h1">02. BILLING INFORMATION</h1>
-			</section>
-			<section class="shipBlock">
-				<h1 class="shipBlock__h1">03. SHIPPING INFORMATION</h1>
-			</section>
-			<section class="shipBlock">
-				<h1 class="shipBlock__h1">04. SHIPPING METHOD</h1>
-			</section>
-			<section class="shipBlock">
-				<h1 class="shipBlock__h1">05. PAYMENT METHOD</h1>
-			</section>
-			<section class="shipBlock">
-				<h1 class="shipBlock__h1">06. ORDER REVIEW</h1>
-			</section>
-		</div>
-	</main>
-
+				<div class="cartForm__bottom">
+					<div class="cartForm__block">
+						<h1 class="cartForm__h1">Shipping Adress</h1>
+						<select class="cartForm__input cartForm__select">
+							<option value="" class="cartForm__input">Bangladesh</option>
+							<option value="" class="cartForm__input">Bangladesh</option>
+							<option value="" class="cartForm__input">Bangladesh</option>
+						</select>
+						<input type="text" class="cartForm__input" placeholder="State">
+						<input type="text" class="cartForm__input" placeholder="Postcode / Zip">
+						<button class="cartButton cartForm__button cartForm__button__mini">get a quote</button>
+					</div>
+					<div class="cartForm__block cartForm__block__margin">
+						<h1 class="cartForm__h1">Shipping Adress</h1>
+						<h4 class="cartForm__h4">Enter your coupon code if you have one</h4>
+						<input type="text" class="cartForm__input" placeholder="Postcode / Zip">
+						<button class="cartButton cartForm__button cartForm__button__mini">Apply coupon</button>
+					</div>
+					<div class="cartForm__block ">
+						<div class="cartForm__block__final">
+							<p class="cartForm__p">Sub total&emsp;&emsp;$900</p>
+							<h1 class="cartForm__h1">GRAND TOTAL&emsp;
+								<span class="logoLetter">$900</span>
+							</h1>
+							<div class="cartForm__buttonBlock">
+								<button class="cartButton cartForm__button cartForm__button__final">proceed to checkout</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</form>
+		</main>
+	</div>
 	<section class="subs">
 		<div class="subsContent">
 			<div class="container subsFlex">
